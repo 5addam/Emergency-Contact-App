@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#d6031c</color>
+    <color name="alertColor">#ff0004</color>
+    <color name="colorBack">#e7e7e7</color>
+    <color name="textColor">#0e0e0e</color>
+    <color name="toolbarColor">#2c8ea4</color>
+    <color name="floatingColor">#464343</color>
+    <color name="white">#FFFFFF</color>
+    <color name="focusColor">#00b7ff</color>
+    <color name="hintColor">#c1c2c4</color>
+    <color name="colorWindow">#196374</color>
+</resources>

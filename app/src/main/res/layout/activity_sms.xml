@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="p.emergencybutton.sms"
+    android:background="@color/colorBack"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:id="@+id/view_rel"
+    >
+    <include
+        layout="@layout/actionbar"
+        android:id="@+id/app_bar"
+        ></include>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_message"
+        android:layout_below="@id/app_bar"
+        android:layout_marginTop="10dp"
+        app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout"
+        >
+<EditText
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/edt_sms"
+    android:hint="Write your messages.."
+    android:textColor= "@color/textColor"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.v7.widget.AppCompatCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_message"
+        android:layout_margin="10dp"
+        android:text="Add Location"
+        android:layout_alignParentRight="true"
+        android:id="@+id/checkBox"/>
+    <Button
+        android:layout_below="@id/checkBox"
+        android:id="@+id/btn_send"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttoncolor"
+        android:text="SEND"
+        android:textColor="@color/colorBack" />
+
+    <Button
+        android:layout_below="@id/btn_send"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Contacts"
+        android:id="@+id/btn_selectContacts"
+        android:background="@drawable/buttoncolor"
+        android:textColor="@color/colorBack"
+        android:focusable="true"
+        />
+
+</RelativeLayout>

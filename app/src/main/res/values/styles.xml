@@ -1,0 +1,34 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    </style>
+        <!-- Customize your theme here. -->
+        <style name="customToolBar" parent="Theme.AppCompat.NoActionBar">
+            <item name="actionOverflowMenuStyle">@style/customMenuItem</item>
+            <item name="android:background">@color/toolbarColor</item>
+            <item name="colorAccent">@color/hintColor</item>
+        </style>
+
+    <style name="customMenuItem" parent="Widget.AppCompat.PopupMenu.Overflow">
+            <item name="android:background">@color/toolbarColor</item>
+            <item name="overlapAnchor">false</item>
+            <item name="android:textColor">@color/colorBack</item>
+            <item name="android:dropDownVerticalOffset">-4.0dip</item>
+        </style>
+
+    <style name="TextAppearance.App.TextInputLayout" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/textColor</item>
+        <item name="colorControlActivated">@color/toolbarColor</item>
+        <item name="android:textColorHint">@color/hintColor</item>
+    </style>
+
+    <style name="TextAppearance.App.FloatingActionButton" parent="android:style/TextAppearance">
+        <item name="android:textColor">@color/hintColor</item>
+        <item name="android:textStyle">bold|italic</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textAlignment">viewStart</item>
+    </style>
+
+
+</resources>
